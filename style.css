@@ -1,0 +1,231 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Oswald', sans-serif;
+}
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/backgroundfront.png.png);
+  background-position: center;
+  background-size: auto auto;
+  position: relative;
+}
+nav{
+  background: rgba(9, 29, 85, 0.637);
+  height: 5px;
+  width: 88.01%;
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+ align-items: center;
+}
+label.logo{
+    border-style: 1px solid #fff;
+    color: rgb(196, 215, 250);
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 25px;
+    font-weight: bold;
+}
+nav img{
+  margin: 0 5px;
+  width: 60px;
+  height: 60px;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;  
+  padding: 8px, 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: rgb(196, 215, 250);
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:2px;
+  background: rgb(196, 215, 250);
+  display:block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover:after{
+  width:100%;
+}
+  .text-box{
+    width: 50%;
+    color: rgb(196, 215, 250);
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50,-50);
+    text-align: center;
+}
+.text-box h1{
+  font-size: 49px;
+}
+.text-box p1{
+  margin: 0.5px 0 0.10px;
+  font-size: 18px;
+  color:  rgb(196, 215, 250);
+}
+.text-box p{ 
+  font-size: 15px;
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    color: rgb(196, 215, 250);
+    border: 1px solid #fff;
+    padding: 5px 25px;
+    font-size: 14;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+  margin: 0 5px;
+  border: 1px solid rgb(196, 215, 250);
+  background: rgb(196, 215, 250);
+  transition: 1s;
+  color:black;
+}
+@media(max-width: 700px){
+  .text-box{
+    font-size: 18px;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    background: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
+}
+ 
+/*-----------content--------*/
+.sub-header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(40, 62, 133, 0.7),rgba(40, 62, 133, 0.7)),url(img/bc.png.jfif);
+  background-position: center;
+  background-size: auto auto;
+  position: relative;
+}
+.div1{
+  width: 33.33%;
+  border-radius: 8px;
+  float: left;
+}
+.image5{
+  height: 600.9px;
+  width: 98%;
+  border-radius: 8px;
+  margin: 4px;
+}
+.div2{
+  height: 40px;
+  width: 66%;
+  color: rgb(0, 1, 10);
+  float: left;
+} 
+.div3{
+  width: 38.33%;
+  margin: 266px auto;
+}
+.image4{
+  height: 340px;
+  width: 80%;
+  border-radius: 8px;
+ 
+}
+.H1{
+  flex-basis: 31%;
+  background:  rgba(255, 255, 255, 0.603);
+  border-radius: 10px;
+  box-sizing: border-box;  
+  transform: translate (-50%, -50%);
+  font-size: 34px;
+  text-align: center;
+}
+.paragraph{
+  flex-basis: 31%;
+  background:  rgba(255, 255, 255, 0.603);
+  border-radius: 10px;
+  box-sizing: border-box;  
+  transform: translate (-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  text-indent: 50px;
+}
+.media{
+  color:rgb(33, 90, 175);
+  margin-left: 5px;
+  text-align: center;
+}
+.p{
+  text-align: center;
+  width: 68%;
+}
+.row{
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.pre{
+  flex-basis: 31%;
+  background: rgb(28, 51, 94);
+  border-radius: 10px;
+  margin: 4px;
+  margin-bottom: 5%;
+  padding: 20px  12px;
+  box-sizing: border-box;
+}
+.ind{
+  flex-basis: 31%;
+  background:  rgb(28, 51, 94);
+  border-radius: 10px;
+  margin: 4px;
+  margin-bottom: 5%;
+  padding: 20px  12px;
+  box-sizing: border-box;
+  
+}
+.ele{
+  flex-basis: 31%;
+  background:  rgb(28, 51, 94);
+  border-radius: 10px;
+  margin: 4px;
+  margin-bottom: 5%;
+  padding: 20px  12px;
+  box-sizing: border-box;
+}
+.inf{
+  flex-basis: 31%;
+  background:  rgb(28, 51, 94);
+  border-radius: 10px;
+  margin: 4px;
+  margin-bottom: 5%;
+  padding: 20px  12px;
+  box-sizing: border-box; 
+}
+.time{
+  margin: 5px;
+  padding: 7px;
+  height: 50px;
+  width: 40%;
+}
